@@ -1,5 +1,4 @@
-## Book Homework Page 487 number 7
-##                  NAME AND EMAIL
+
 import pickle 
 
 
@@ -215,12 +214,7 @@ def main():
         if not file_name.endswith('.dat')  :
             file_name = file_name + '.dat'
         password = input('create your own Password: ')
-##        password_list.append(password)
-##        password_file = open('password_file.dat', 'ab')
-##        pickle.dump(password_list, password_file)
-##        password_file.close()
-##        
- #      keep_user_info = {}
+
         try : 
             user_file_info = open('user_file_info.dat', 'rb')
             bridge = pickle.load(user_file_info)
@@ -267,15 +261,7 @@ def main():
         pickle.dump(the_info, outfile)
         outfile.close()
 
-##    password_file_show = open('password_file.dat', 'rb')
-##    oup = pickle.load(password_file_show)
-##    print(oup)
-##    password_file_show.close()
-
             
 
 
 main()
-## the passport can be store in a list
-## anc accessed whenever a user is login
-## The default password is "tchamba@101
